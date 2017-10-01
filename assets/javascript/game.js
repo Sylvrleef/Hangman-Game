@@ -4,7 +4,7 @@ var wordToGuess = words[Math.floor(Math.random() * words.length)];
 
 var wins = 0
 
-var hiddenWord = wordToGuess.replace( , "_")
+var hiddenWord = wordToGuess.replace(/ /gi, "_")
 
 var userInput =
 
