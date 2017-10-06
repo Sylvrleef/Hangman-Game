@@ -1,49 +1,89 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>
-      Halloween Hangman
-    </title>
-  </head>
-  <body>
 
-    <div id="heading" class="container-fluid">
-      <div class="d-flex justify-content-center">
-        <h1>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>
+    Halloween Hangman
+  </title>
+</head>
+
+<body>
+
+  <div id="heading" class="container-fluid">
+    <div class="d-flex justify-content-center">
+      <h1>
           Hangman!!
         </h1>
-      </div>
-      <div class="d-flex justify-content-center">
-        <h1>
+    </div>
+    <div class="d-flex justify-content-center styles">
+      <h1>
           Halloween Style!!
         </h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-1">
+    </div>
+    <div class="col-md-4">
+      <img id="hangman" src="assets/images/Hangman.jpg" alt="ERROR">
+    </div>
+    <div id="gameArea" class="col-md-4 container-fluid">
+      <div class="row">
+        <div class="col-md-3 styles">
+        </div>
+        <h2 class="col-md-6 styles">
+            Press any key to start!
+          </h2>
+      </div>
+      <br><br><br><br>
+      <div class="row">
+        <div class="col-md-1 styles">
+        </div>
+        <div id="emptyWord" class="col-md-10 word styles">
+        </div>
+      </div>
+      <br><br><br><br><br>
+      <div class="row">
+        <div class="col-md-3 styles">
+        </div>
+        <h2 class="col-md-6 styles">
+            Guesses:
+          </h2>
+      </div>
+      <div class="row">
+        <div id="keyPressed" class="col-md-12 styles">
+        </div>
+      </div>
+      <div id="remaining" class="row">
+        <div id=remainGuess class="col-md-11 styles">
+          Remaining Guesses:
+        </div>
+        <div class="col-me-1 styles">
+          <div id=remainingGuesses>
+          </div>
+        </div>
+      </div>
+      <div id="wins" class="row">
+        <button id="reset" type="button" class="btn btn-warning bottomleft col-md-6 styles">
+            Reset Wins
+          </button>
+        <h2 class="col-md-4 styles">
+            Wins:
+          </h2>
+        <h2 id=winCount class="col-md-2 styles">
+          </h2>
       </div>
     </div>
+  </div>
 
-    <div class="row">
-      <div class="col-md-1">
-      </div>
-      <div class="col-md-4">
-        <img id="hangman" src="assets/images/Hangman.jpg" alt="ERROR">
-      </div>
-      <div id="gameArea" class="col-md-4 container-fluid">
-        <h2>
-          Press any key to start!
-        </h2>
-        <button id="reset" type="button" class="btn btn-warning bottomleft">
-          Reset Wins
-        </button>
-      </div>
-    </div>
+  <script src="assets/javascript/game.js">
+  </script>
 
-    <script src="assets/javascript/game.js">
+</body>
 
-    </script>
-
-  </body>
 </html>

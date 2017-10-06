@@ -14,6 +14,37 @@ h2 {
   text-align: center;
 }
 
+.word {
+  font-size: 40px;
+  line-height: 50%;
+}
+
+.styles {
+  text-align: center;
+}
+
+#emptyWord {
+  margin: 0px;
+  padding: 0px;
+}
+
+#remaining {
+  font-size: 18.5px;
+  padding: 10px 10px 10px 0px;
+  width: 225px;
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+  /*border: 2px solid orange;*/
+}
+
+#keyPressed {
+  line-height: 150%;
+  -moz-column-count: 6;
+  -webkit-column-count: 6;
+  column-count: 6;
+}
+
 #hangman {
   width: auto;
   height: 500px;
@@ -28,8 +59,13 @@ h2 {
 }
 
 #reset {
+    font-size: 18px;
+}
+
+#wins {
+    width: 200px;
     position: absolute;
     bottom: 20px;
-    left: 20px;
-    font-size: 18px;
+    left: 40px;
+    /*border: 2px solid orange;*/
 }
